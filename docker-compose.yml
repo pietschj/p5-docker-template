@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  p5-server:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./sketches:/app/sketches
+    restart: unless-stopped
